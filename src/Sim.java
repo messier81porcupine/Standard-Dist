@@ -1,11 +1,13 @@
 import java.lang.reflect.Array;
 import java.util.Random;
+import java.util.SortedMap;
+import java.util.TreeMap;
 import java.util.HashMap;
 
 public class Sim {
-    public HashMap runBall(int totalIterations, int totalBounces){ // totalIterations = num of balls to run // bounces should always be odd
-        HashMap<Integer, Integer> bins = new HashMap<Integer, Integer>();
-
+    public SortedMap runBall(int totalIterations, int totalBounces){ // totalIterations = num of balls to run // bounces should always be odd
+        //HashMap<Integer, Integer> bins = new HashMap<Integer, Integer>();
+        SortedMap<Integer, Integer> bins = new TreeMap<>();
         for (int i = totalBounces * -1; i <= totalBounces; i ++){
             System.out.println(i);
             if (i % 2 != 0){

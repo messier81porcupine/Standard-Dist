@@ -1,8 +1,6 @@
-import java.lang.reflect.Array;
-import java.util.Random;
 import java.util.SortedMap;
 import java.util.TreeMap;
-import java.util.HashMap;
+
 
 public class Sim {
     public SortedMap runBall(int totalIterations, int totalBounces){ // totalIterations = num of balls to run // bounces should always be odd
